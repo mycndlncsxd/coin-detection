@@ -1,0 +1,33 @@
+data: /mnt/data/projects/coins_counter/dataset_all_v2/coins.yaml
+epochs: 100
+batch: 6
+imgsz: 640
+save: True
+device: 0
+exist_ok: True
+workers: 8
+patience: 100
+project: coins_counter
+name: yolo26s_2026-05-21_640_weak_aug_fix
+optimizer: auto
+
+save: True
+save_period: 5
+
+# Только самые безопасные изменения
+hsv_h: 0.005    # очень слабое изменение цвета (±0.5%)
+hsv_s: 0.2      # слабое изменение насыщенности
+hsv_v: 0.2      # слабое изменение яркости
+
+degrees: 180 # поворот на ±5 градусов (почти незаметно)
+translate: 0.05 # сдвиг на 5%
+scale: 0.2      # масштаб 0.8x до 1.2x
+
+# Остальное выключено
+shear: 0.0
+perspective: 0.0
+flipud: 0.0
+fliplr: 0.0
+mosaic: 0.0
+mixup: 0.0
+copy_paste: 0.0
