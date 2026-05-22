@@ -3,7 +3,6 @@
 ```
 ├── scripts/                   # все скрипты проекта
 │   ├── count_sum.py           # подсчёт суммы по аннотациям
-│   ├── draw_bbox_by_csv.py    # отрисовка боксов по CSV
 │   ├── generate_synth_data.py # генератор синтетических данных
 │   ├── heic_to_jpg.py         # конвертер HEIC → JPG
 │   ├── rename_files_from_n.py # переименование файлов
